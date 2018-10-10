@@ -6,7 +6,7 @@ Deep Neural Network for Cat Images Classification
 1. [Installation](#installation)
 2. [Project Motivation](#motivation)
 3. [File Descriptions](#files)
-4. [Results](#results)
+4. [Network Architecture](#architecture)
 5. [Licensing, Authors, and Acknowledgements](#licensing)
 
 ## Installation <a name="installation"></a>
@@ -16,17 +16,23 @@ The following additional libraries have been used:
 * matplotlib is a library to plot graphs in Python.
 * h5py is a common package to interact with a dataset that is stored on an H5 file.
 * PIL and scipy are used here to test your model with your own picture at the end.
-* dnn_app_utils provides some additional functions 
+* dnn_utils provides the functions to implement a fully connected Deep Neural Network
 
 ## Project Motivation<a name="motivation"></a>
-
+I really enjoyed imoplementing a Deep Neural Netowk in python from scratch to fully understand how these networks work under the hood.
 
 
 ## File Descriptions <a name="files"></a>
 The following Pythom files included in this project are:
+* train.py: train a neural network on a dataset of 3x64x64 images, predict classes and on train and test set, plot learning curve and save
+the parameters on a file
+* predict.py: load network parameters from a file, run forward propagation on train and test dataset and show results
+* test.py: test the network on your own image to classify it as a cat or not cat
+* dnn_utils.py: utilities to implement the network from scratch
 
 
-## Results<a name="results"></a>
+## Architecture<a name="architecture"></a>
+![](LlayerNN_kiank.png?raw=true)
 
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
